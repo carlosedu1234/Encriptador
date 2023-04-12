@@ -9,15 +9,20 @@
   </head>
   <body>
     <div>
-      <input
-        class="contenedorTexto"
-        id="textoEncriptar"
-        type="text"
-        placeholder="Escriba texto a encriptar"
-      />
+      <div class="contenedorTexto">
+        <input
+          id="textoEncriptar"
+          type="text"
+          placeholder="Escriba texto a encriptar"
+        />
+      </div>
 
-      <input class="contenedorTexto" id="textoEncriptado" type="text" />
+      <div
+        class="contenedorTexto contenedorTextoSalida"
+        id="textoEncriptado"
+      ></div>
     </div>
+
     <div>
       <div class="contenedorBotones">
         <button class="botonesEn" onclick="encriptar()">Encriptar</button>
@@ -31,4 +36,6 @@
     </div>
   </body>
   <script src="Js/encriptador.js"></script>
+  <script src="Js/desencriptar.js"></script>
+  <script src="Js/copiar.js"></script>
 </html>
