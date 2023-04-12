@@ -1,12 +1,12 @@
 var textoNormal = document.getElementById('textoEncriptar');
+var copiarTexto = document.getElementById("textoEncriptado");
 var texto = [];
+
 
 function encriptar() {
 
     let textoEncriptar = textoNormal.value;
     let textoSeparado = [];
-
-
 
     for (let i = 0; i < textoEncriptar.length; i++) {
         textoSeparado[i] = textoEncriptar[i];
@@ -45,7 +45,8 @@ function encriptar() {
     }
 
     imprimir(texto);
-
+    textoNormal.value = "";
+return texto;
 
 }
 
@@ -59,7 +60,8 @@ function imprimir(textoEn) {
     }
 
     console.log(textoImprimir);
-    textoNormal.value="";
+    copiarTexto.value = textoImprimir;
+
 
 }
 
@@ -96,12 +98,17 @@ function descencriptar() {
         else { textoDescencriptado += texto[i]; }
     }
     console.log(textoDescencriptado);
+    imprimir(textoDescencriptado);
+    return textoDescencriptado;
 
 }
 
 
 
+function copiar() {
 
-
-
-function copiar() { }
+let textoCopiado=copiarTexto;
+textoCopiado.select();
+document.execCommand("copy");
+console.log(textoCopiado);
+}

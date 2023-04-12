@@ -4,16 +4,31 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="estiloscss/ventana.css" />
     <title>Encriptador</title>
   </head>
   <body>
-    <input id="textoEncriptar" type="text"  placeholder="Escriba texto a encriptar" />
-   
-    <button onclick="encriptar()">Encriptar</button>
-    <button onclick="descencriptar()">Descencriptar</button>
+    <div>
+      <input
+        class="contenedorTexto"
+        id="textoEncriptar"
+        type="text"
+        placeholder="Escriba texto a encriptar"
+      />
 
+      <input class="contenedorTexto" id="textoEncriptado" type="text" />
+    </div>
+    <div>
+      <div class="contenedorBotones">
+        <button class="botonesEn" onclick="encriptar()">Encriptar</button>
+      </div>
+      <div class="contenedorBotones">
+        <button class="botonesDes" onclick="descencriptar()">
+          Descencriptar
+        </button>
+        <button class="botonesDes" onclick="copiar()">Copiar</button>
+      </div>
+    </div>
   </body>
-  <script src="encriptador.js">
-    
-  </script>
+  <script src="Js/encriptador.js"></script>
 </html>

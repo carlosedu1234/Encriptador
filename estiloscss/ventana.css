@@ -1,0 +1,32 @@
+body {
+  background-color: aliceblue;
+}
+
+.contenedorTexto {
+  width: 20%;
+  padding: 10%;
+  padding-top: 30%;
+  display: inline-block;
+  height: 100%;
+}
+
+.contenedorBotones {
+  display: inline-block;
+}
+.botonesEn {
+  margin: 10px;
+  padding: 10px;
+  background-color: rgb(105, 105, 255);
+}
+
+.botonesDes {
+  margin: 10px;
+  padding: 10px;
+  background-color: white;
+}
+
+.botonCopiar{
+
+
+    display: block;
+}
