@@ -1,5 +1,9 @@
 var textoNormal = document.getElementById('textoEncriptar');
 var copiarTexto = document.getElementById("textoEncriptado");
+var contenidoEncriptado=document.getElementById("contenedorEncriptado");
+var botonCopiar=document.getElementById("botonCop");
+
+botonCopiar.style.display="none";
 var texto = [];
 
 function validarCadena(cadena) {
@@ -16,11 +20,13 @@ function validarCadena(cadena) {
 }
 
 function encriptar() {
-
-   
+ 
 
 
     if (validarCadena(textoNormal.value)) {
+        botonCopiar.style.display="block";
+
+        contenidoEncriptado.style.display="none";
 
         let textoEncriptar = textoNormal.value;
         let textoSeparado = [];
