@@ -150,3 +150,21 @@ width: 100%;
   flex-grow: 0;
 
 }
+
+.botonLimpiar{
+
+  position: relative;
+  left: 260px;
+  top: -754px;
+  margin-left: 15px;
+  padding: 10px;
+  gap: 8px;
+  width: 71px;
+  height: 54px;
+  background: #d8dfe8;
+  border-radius: 24px;
+  flex: none;
+  order: 0;
+  flex-grow: 0;
+
+}

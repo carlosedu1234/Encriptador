@@ -1,3 +1,4 @@
+
 function copiar() {
 
     let textoCopiado = copiarTexto;
@@ -13,4 +14,5 @@ function copiar() {
     document.execCommand("copy");
     console.log(textoCopiado);
     selection.removeAllRanges();
+
 }

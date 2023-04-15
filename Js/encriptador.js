@@ -1,17 +1,17 @@
 var textoNormal = document.getElementById('textoEncriptar');
 var copiarTexto = document.getElementById("textoEncriptado");
-var contenidoEncriptado=document.getElementById("contenedorEncriptado");
-var botonCopiar=document.getElementById("botonCop");
+var contenidoEncriptado = document.getElementById("contenedorEncriptado");
+var botonCopiar = document.getElementById("botonCop");
 
-botonCopiar.style.display="none";
+botonCopiar.style.display = "none";
 var texto = [];
-
+var limpiar = true;
+limpio = []
 function validarCadena(cadena) {
-    // Expresión regular para validar solo letras minúsculas
+   
     var minusculas = /^[a-z\s]*$/;
-    var espacio=" ";
 
-    // Comprobar si la cadena cumple con la expresión regular
+    
     if (minusculas.test(cadena)) {
         return true;
     } else {
@@ -19,14 +19,25 @@ function validarCadena(cadena) {
     }
 }
 
-function encriptar() {
- 
+function limpiarfondo() {
 
+    botonCopiar.style.display = "none";
+    contenidoEncriptado.style.display = "block";
+    copiarTexto.innerHTML = "";
+    textoNormal.value="";
+
+
+}
+
+function encriptar() {
+
+    if (textoNormal.value!=""){
+    if (!limpiar) { texto = limpio; limpiar = true; }
 
     if (validarCadena(textoNormal.value)) {
-        botonCopiar.style.display="block";
 
-        contenidoEncriptado.style.display="none";
+        botonCopiar.style.display = "block";
+        contenidoEncriptado.style.display = "none";
 
         let textoEncriptar = textoNormal.value;
         let textoSeparado = [];
@@ -66,7 +77,7 @@ function encriptar() {
 
             else { texto[i] = textoSeparado[i]; }
         }
-
+        limpiar = false;
         imprimir(texto);
         textoNormal.value = "";
         return texto;
@@ -74,6 +85,12 @@ function encriptar() {
     } else {
         console.log("La cadena contiene caracteres que no son letras minúsculas");
     }
+}
+
+else{
+
+    console.log("No a ingresado ingun texto");
+}
 
 }
 
