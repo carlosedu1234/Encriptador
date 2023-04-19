@@ -8,43 +8,56 @@
     <title>Encriptador</title>
   </head>
   <body>
-    <div class="contenedor">
-      <div>
-        <img class="imagenLogo" src="imagenes/Vector.png" alt="logo" />
-        <input
-          id="textoEncriptar"
-          class="contenedorTexto"
-          type="text"
-          placeholder="Escribe el texto aqui"
-        />
-      </div>
-      <div class="izquierda"><h2></h2></div>
-      <div class="contenedorDerecha">
-        <div id="contenedorEncriptado" class="contenedorImagen">
-          <img class="imagenEncriptar" src="imagenes/1.png" alt="fondo" />
+    <main>
+      <div class="contenedor">
+        <div class="contenedo-logo">
+          <img class="imagenLogo" src="imagenes/Vector.png" alt="logo" />
         </div>
-        <div class="mensajeEncriptado" id="textoEncriptado"></div>
-        <button class="botonCopiar" onclick="copiar()" id="botonCop">
-          Copiar
-        </button>
-      </div>
-      <div class="contenedorBotones">
-        <p class="parrafo">
-          <ion-icon name="alert-circle-outline"></ion-icon>
-          <img
-            src="imagenes/exclamation-circle_icon-icons.com_70165.png"
-            alt="icono"
-            width="10px"
+
+        <!--Contenedor para el texto a ingresar -->
+        <div class="contenedor-texto">
+          <input
+            id="textoEncriptar"
+            class="contenedorTexto"
+            type="text"
+            placeholder="Escribe el texto aqui"
           />
-          Solo letras minúsculas y sin acentos
-        </p>
-        <button class="botonesEn" onclick="encriptar()">Encriptar</button>
-        <button class="botonesDes" onclick="descencriptar()">
-          Descencriptar
-        </button>
-        <button class="botonLimpiar" onclick="limpiarfondo()">Limpiar</button>
+
+          <!--botones de encriptar y descencriptar-->
+          <div class="contenedorBotones">
+            <p class="parrafo">
+              <ion-icon name="alert-circle-outline"></ion-icon>
+              <img
+                src="imagenes/exclamation-circle_icon-icons.com_70165.png"
+                alt="icono"
+                width="10px"
+              />
+              Solo letras minúsculas y sin acentos
+            </p>
+            <button class="botonesEn" onclick="encriptar()">Encriptar</button>
+            <button class="botonesDes" onclick="descencriptar()">
+              Descencriptar
+            </button>
+            <button class="botonLimpiar" onclick="limpiarfondo()">
+              Limpiar
+            </button>
+          </div>
+        </div>
+        <!--zona de encriptado-->
+
+        <div class="contenedor-desencriptar">
+          <div class="contenedorDerecha">
+            <div id="contenedorEncriptado" class="contenedorImagen">
+              <img class="imagenEncriptar" src="imagenes/1.png" alt="fondo" />
+            </div>
+            <div class="mensajeEncriptado" id="textoEncriptado"></div>
+            <button class="botonCopiar" onclick="copiar()" id="botonCop">
+              Copiar
+            </button>
+          </div>
+        </div>
       </div>
-    </div>
+    </main>
   </body>
   <script src="Js/encriptador.js"></script>
   <script src="Js/desencriptar.js"></script>

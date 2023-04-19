@@ -1,5 +1,5 @@
 body {
-  margin:0px;
+  margin: 0px;
   padding: 0px;
   background: #f3f5fc;
 }
@@ -10,7 +10,6 @@ body {
   margin-left: 40px;
   height: 48px;
   width: 70px;
-  
 }
 .titulo {
   float: inherit;
@@ -25,13 +24,14 @@ body {
   background: #f3f5fc;
 }
 
+.contenedor-texto {
+  display: inline;
+  width: 60%;
+}
 
-
-.izquierda {
-  float: left;
-  width: 70%;
-  border-radius: 20px;
-  height: auto;
+.contenedor-desencriptar {
+  display: inline;
+  width: 30%;
 }
 .contenedorDerecha {
   position: relative;
@@ -42,24 +42,22 @@ body {
   border-radius: 20px;
   height: 647px;
   background: rgb(255, 255, 255);
-  
 }
 
-.mensajeEncriptado{
-
-font-size: 20px;
-bottom: 680px;
-left: 43px;
-width: 100%;
-padding: 10px;
+.mensajeEncriptado {
+  font-size: 20px;
+  bottom: 680px;
+  left: 43px;
+  width: 100%;
+  padding: 10px;
 }
 
-.imagenEncriptar{
+.imagenEncriptar {
   position: relative;
   width: 100%;
   height: 100%;
 }
-.contenedorImagen{
+.contenedorImagen {
   width: 100%;
   height: 100%;
 }
@@ -70,16 +68,18 @@ padding: 10px;
 }
 
 .contenedorBotones {
+  position: relative;
   float: left;
+  top: 675px;
   width: 70%;
   height: auto;
 }
 
 .contenedorTexto {
   position: relative;
-  width: 577px;
+  width: 50%;
   height: 48px;
-  left: 144px;
+  left: 221px;
   top: 110px;
   font-family: "Inter";
   font-style: normal;
@@ -135,10 +135,10 @@ padding: 10px;
   flex-grow: 0;
 }
 
-.botonCopiar{
+.botonCopiar {
   position: absolute;
   left: 35px;
-  top:542px;
+  top: 542px;
   margin-left: 15px;
   padding: 10px;
   gap: 8px;
@@ -149,11 +149,9 @@ padding: 10px;
   flex: none;
   order: 0;
   flex-grow: 0;
-
 }
 
-.botonLimpiar{
-
+.botonLimpiar {
   position: relative;
   left: 260px;
   top: -754px;
@@ -167,5 +165,68 @@ padding: 10px;
   flex: none;
   order: 0;
   flex-grow: 0;
+}
 
+@media screen and (max-width: 480px) {
+  .contenedor {
+    width: auto;
+  }
+  .contenedor-texto {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .contenedorTexto {
+    position: absolute;
+    left: 35px;
+    width: 100%;
+  }
+  .contenedo-logo {
+    display: inline-block;
+  }
+  .contenedor-desencriptar {
+    position: absolute;
+    left: 35px;
+    top: 856px;
+    display: block;
+    width: auto;
+    height: 30%;
+  }
+
+  .contenedorBotones {
+    display: block;
+    height: 20%;
+    width: 100%;
+  }
+
+  .botonLimpiar {
+    position: relative;
+    left: 80px;
+    top: -780px;
+  }
+  .botonesDes {
+    float: left;
+    display: inline-block;
+    width: 40%;
+    top: -129px;
+  }
+  .botonesEn {
+    float: right;
+    display: inline-block;
+    width: 40%;
+    position: absolute;
+    left: 0px;
+    top: -90px;
+  }
+
+  .parrafo {
+    position: relative;
+    left: 30px;
+    top: -150px;
+  
+  }
+  .contenedorImagen {
+    position: relative;
+    display: block;
+  }
 }
