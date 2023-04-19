@@ -51,6 +51,7 @@ font-size: 20px;
 bottom: 680px;
 left: 43px;
 width: 100%;
+padding: 10px;
 }
 
 .imagenEncriptar{
@@ -135,7 +136,7 @@ width: 100%;
 }
 
 .botonCopiar{
-  position: relative;
+  position: absolute;
   left: 35px;
   top:542px;
   margin-left: 15px;
