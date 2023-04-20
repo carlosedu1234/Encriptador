@@ -107,7 +107,6 @@ body {
   margin-left: 15px;
   left: 176px;
   top: -210px;
-  padding: 24px;
   gap: 8px;
   width: 300px;
   height: 60px;
@@ -115,8 +114,7 @@ body {
   border-radius: 24px;
   flex: none;
   color: white;
-  order: 0;
-  flex-grow: 0;
+
 }
 
 .botonesDes {
@@ -124,15 +122,12 @@ body {
   left: 176px;
   top: -210px;
   margin-left: 15px;
-  padding: 24px;
   gap: 8px;
   width: 300px;
   height: 60px;
   background: #d8dfe8;
   border-radius: 24px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+
 }
 
 .botonCopiar {
@@ -140,15 +135,12 @@ body {
   left: 35px;
   top: 542px;
   margin-left: 15px;
-  padding: 10px;
   gap: 8px;
   width: 222px;
   height: 54px;
   background: #d8dfe8;
   border-radius: 24px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+
 }
 
 .botonLimpiar {
@@ -156,15 +148,27 @@ body {
   left: 260px;
   top: -754px;
   margin-left: 15px;
-  padding: 10px;
   gap: 8px;
-  width: 71px;
-  height: 54px;
+  width: 85px;
+  height: 40px;
   background: #d8dfe8;
   border-radius: 24px;
-  flex: none;
-  order: 0;
-  flex-grow: 0;
+}
+
+.botonCopiar,.botonesDes,.botonLimpiar,.botonesEn{
+
+font-size: 20px;
+font-weight: bold;
+font-family: inherit;
+text-align: center;
+
+}
+
+.botonCopiar:hover,.botonesDes:hover,.botonLimpiar:hover,.botonesEn:hover{
+
+transition: 1s;
+transform: scale(1.1);
+
 }
 
 @media screen and (max-width: 480px) {
