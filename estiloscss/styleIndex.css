@@ -2,6 +2,7 @@ body {
   margin: 0px;
   padding: 0px;
   background: #f3f5fc;
+  
 }
 
 .imagenLogo {
@@ -22,6 +23,7 @@ body {
   left: -2277px;
   padding: 5px;
   background: #f3f5fc;
+  
 }
 
 .contenedor-texto {
@@ -65,6 +67,7 @@ body {
   position: relative;
   width: 100%;
   height: 100%;
+  box-shadow: 3px 3px 3px 5px #66708f;
 }
 
 .contenedorBotones {
@@ -171,6 +174,34 @@ transform: scale(1.1);
 
 }
 
+footer{
+background-color: rgb(10, 56, 113, 0.3);
+
+}
+
+.contenedor-list-footer{
+height: 100%;
+text-align: center;
+}
+
+ion-icon {
+  font-size: 42px;
+}
+.alura{
+width: 28px;
+
+}
+
+
+.contenedor-list-footer li {
+list-style-type:none;
+text-align: center;
+display: inline;
+margin: 0 0.5em;
+
+
+}
+
 @media screen and (max-width: 480px) {
   .contenedor {
     width: auto;
@@ -183,7 +214,7 @@ transform: scale(1.1);
   .contenedorTexto {
     position: absolute;
     left: 35px;
-    width: 100%;
+    width: 80%;
   }
   .contenedo-logo {
     display: inline-block;
@@ -194,25 +225,35 @@ transform: scale(1.1);
     top: 856px;
     display: block;
     width: auto;
-    height: 30%;
+  
   }
 
+  .contenedorDerecha{
+    
+    height: 300px;
+    top:-200px;
+    clear: both;
+    margin-bottom: 10px;
+   
+  }
+  
   .contenedorBotones {
     display: block;
     height: 20%;
     width: 100%;
+    top: 500px;
   }
 
   .botonLimpiar {
     position: relative;
     left: 80px;
-    top: -780px;
+    top: -600px;
   }
   .botonesDes {
     float: left;
     display: inline-block;
     width: 40%;
-    top: -129px;
+    top: -161px;
   }
   .botonesEn {
     float: right;
@@ -221,6 +262,12 @@ transform: scale(1.1);
     position: absolute;
     left: 0px;
     top: -90px;
+  }
+
+  .botonCopiar {
+    position: absolute;
+    left: 35px;
+    top: 250px;
   }
 
   .parrafo {
@@ -232,5 +279,10 @@ transform: scale(1.1);
   .contenedorImagen {
     position: relative;
     display: block;
+  }
+
+  footer{
+
+    height: 100px;
   }
 }
